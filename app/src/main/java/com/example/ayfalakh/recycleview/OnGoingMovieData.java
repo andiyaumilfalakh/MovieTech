@@ -2,7 +2,7 @@ package com.example.ayfalakh.recycleview;
 
 import java.util.ArrayList;
 
-public class MovieData {
+public class OnGoingMovieData {
     public static String[][] data = new String[][]{
             {"Captain Marvel", "Captain Marvel adalah superhero wanita dari Marvel yang mempunyai banyak kekuatan setara seperti Superman. Superhero yang bernama Carol Danvers ini awalnya merupakan seorang pilot luar angkasa, konon ia mendapatakan kekuatan supernya dari bangsa alien.", String.valueOf(R.drawable.captain_marvel)},
             {"Alita", "Alita terbangun di dunia masa depan yang tak ia kenal, dan tanpa ingatan tentang siapa dirinya. Ia kemudian dibawa oleh Ido, seorang dokter simpatik yang menyadari bahwa di dalam tubuh robot Alita yang sempat terbengkalai itu terdapat hati dan jiwa seorang wanita muda dengan kisah masa lalu yang luar biasa.", String.valueOf(R.drawable.alita)},
@@ -13,12 +13,10 @@ public class MovieData {
             {"Wonder Park", "Wonder Park berkisah tentang sebuah taman hiburan yang luar biasa, di mana imajinasi seorang gadis yang sangat kreatif bernama June (Brianna Denski) menjadi hidup.", String.valueOf(R.drawable.wonder_park)},
             {"Shazam", "Billy Batson, seorang anak yatim berusia 14 tahun yang bermasalah yang tinggal di Philadelphia, diatur untuk pindah ke rumah asuh baru - yang ketujuh berturut-turut - dengan keluarga Vazquez dan lima anak asuh lainnya. Suatu hari, Billy naik mobil subway dan menemukan dirinya diangkut ke dunia yang berbeda di mana penyihir kuno memberinya kekuatan.", String.valueOf(R.drawable.shazam)},
             {"Hellboy", "Hellboy terbaru ini akan mengambil latar sebagai sekuel Hellboy II: The Golden Army. Diangkat dari komik karya Mike Mignola, Hellboy, yang tertangkap antara dunia supernatural dan manusia, bertempur dengan seorang penyihir kuno yang ingin membalas dendam.", String.valueOf(R.drawable.hellboy)},
-            {"Joker", "Joker adalah film thriller psikologis Amerika yang akan datang yang didistribusikan oleh Warner Bros Pictures dan berdasarkan pada karakter DC Comics Joker. Film ini dimaksudkan untuk menjadi yang pertama dari serangkaian film berbasis DC yang terpisah dari DC Extended Universe.", String.valueOf(R.drawable.joker)}
-
-
+            {"Joker", "Joker adalah film thriller psikologis Amerika yang akan datang yang didistribusikan oleh Warner Bros Pictures dan berdasarkan pada karakter DC Comics Joker. Film ini dimaksudkan untuk menjadi yang pertama dari serangkaian film berbasis DC yang terpisah dari DC Extended Universe.", String.valueOf(R.drawable.joker)},
     };
 
-    public static long[] dataPhoto = new long[]{
+    public static long[] dataImage  = new long[]{
             R.drawable.captain_marvel,
             R.drawable.alita,
             R.drawable.how_to_train_the_dragon,
@@ -34,11 +32,11 @@ public class MovieData {
     public static ArrayList<Movie> getListData(){
         ArrayList<Movie> list = new ArrayList<>();
         for (String[] aData : data) {
-            Movie recomended = new Movie();
-            recomended.setName(aData[0]);
-            recomended.setDescription(aData[1]);
-            recomended.setPhoto(aData[2]);
-            list.add(recomended);
+            Movie movie = new Movie();
+            movie.setName(aData[0]);
+            movie.setDescription(aData[1]);
+            movie.setPhoto(aData[2]);
+            list.add(movie);
         }
         return list;
     }

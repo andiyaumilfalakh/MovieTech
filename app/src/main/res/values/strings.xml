@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">RecycleView</string>
+    <string name="app_name">MovieTech</string>
+    <string name="on_going">On Going</string>
+    <string name="up_coming">Up Coming</string>
+    <string name="description">Description</string>
+    <string name="announcement">Announcement</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="change_language">Change Language</string>
 </resources>

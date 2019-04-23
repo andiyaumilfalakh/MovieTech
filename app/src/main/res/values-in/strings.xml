@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieTech</string>
+    <string name="on_going">Sedang Tayang</string>
+    <string name="up_coming">Akan Tayang</string>
+    <string name="description">Deskripsi</string>
+    <string name="announcement">Pengumuman</string>
+    <string name="add">Tambah</string>
+    <string name="delete">Hapus</string>
+    <string name="change_language">Ganti Bahasa</string>
+</resources>
